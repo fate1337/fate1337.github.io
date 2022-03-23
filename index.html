@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/indexcss.css">
+    <title>Dota</title>
+</head>
+    <body>
+
+
+        <div class="nav">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="#hom" class="link">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">
+                                <p>Home</p>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#her" class="link">
+                            <span class="icon">
+                                <ion-icon name="accessibility-outline"></ion-icon>
+                            </span>
+                            <span class="text">
+                                <p>Hero</p>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#itm" class="link">
+                            <span class="icon">
+                                <ion-icon name="hammer-outline"></ion-icon>
+                            </span>
+                            <span class="text">
+                                <p>Items</p>
+                            </span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="screen">
+            <div class="scr activeOps" id="hom">
+                <h1>Home</h1>
+            </div>
+
+            <div class="scr" id="her">
+                <h1>Hero</h1>
+            </div>
+            
+            <div class="scr" id="itm">
+                <h1>Items</h1>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="script/menuActive.js"></script>
+        <script src="script/screenAnchore.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

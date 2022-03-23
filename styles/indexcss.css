@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root
+{
+    --clr: #222327;
+}
+
+body
+{
+    background: var(--clr);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 300;
+}
+
+.nav
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: flex-end;
+    z-index: 2;
+}
+.navigation
+{
+    width: 400px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.navigation ul
+{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul li
+{
+    position: relative;
+    list-style-type: none;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+}
+
+.navigation ul li a
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navigation ul li a .text
+{
+    color: var(--clr);
+    position: relative;
+    transition: 0.3s;
+    opacity: 0;
+}
+.navigation ul li a .icon
+{
+    color: var(--clr);
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 75px;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+.navigation ul li.active a .icon
+{
+    transform: translateY(-35px);
+}
+.navigation ul li.active a .text
+{   
+    transform: translateY(-35px);
+    opacity: 1;
+}
+.indicator
+{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: violet;
+    border-radius: 50%;
+    border: solid 6px var(--clr);
+    top: -50%;
+    transition: 0.3s;
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator
+{
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator
+{
+    transform: translateX(calc(70px + 45px));
+}
+
+.navigation ul li:nth-child(3).active ~ .indicator
+{
+    transform: translateX(calc(70px * 2 + 45px * 2));
+}
+
+.screen
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.scr
+{
+    position: absolute;
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.activeOps
+{
+    opacity: 1;
+    z-index: 1;
+}
+
+
