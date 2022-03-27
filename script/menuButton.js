@@ -1,22 +1,23 @@
 const buttonForHero = document.querySelectorAll('.screen__link');
-let but = 0;
+
+let but;
 function forHero(){
     list.forEach((item) =>
     item.classList.remove('active'));
     scr.forEach((item) =>
     item.classList.remove('activeOps'));
-    if(but = 0){
+    if(buttonForHero[0] == but){
     list[1].classList.add('active');
-    list[1].classList.add('activeOps');
-    } else if(but = 1){
+    scr[1].classList.add('activeOps');
+    } else if(buttonForHero[1] == but){
         list[2].classList.add('active');
-        list[2].classList.add('activeOps'); 
+        scr[2].classList.add('activeOps'); 
     }
     textUp.classList.remove('activeTitle');
 }
 
+console.log(buttonForHero[0]);
+console.log(buttonForHero[1]);
+buttonForHero.forEach((item) => item.addEventListener('click', function(){but = item}));
 
-for(let i = 0; i < list.length; i ++){
-    buttonForHero[i].addEventListener('click', function(){but = i;});
-    buttonForHero[i].addEventListener('click', forHero); 
-}
+buttonForHero.forEach((item) => item.addEventListener('click', forHero));
