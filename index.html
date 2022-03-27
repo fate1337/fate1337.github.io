@@ -2,18 +2,26 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+
+    <!-- style -->
     <link rel="stylesheet" href="styles/indexcss.css">
     <link rel="stylesheet" href="styles/indexCssScreen.css">
+
+    <!-- media -->
     <link rel="stylesheet" href="styles/mediaStyle/home/mediaHome700.css">
+    <link rel="stylesheet" href="styles/mediaStyle/home/mediaHome405.css">
+
+    <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dota</title>
 </head>
     <body>
 
-
+        <!-- navigation bar -->
         <div class="nav">
             <div class="navigation">
                 <ul>
+                    <!-- nav button home -->
                     <li class="list active">
                         <a href="#hom" class="link">
                             <span class="icon">
@@ -24,6 +32,7 @@
                             </span>
                         </a>
                     </li>
+                    <!-- nav button hero -->
                     <li class="list">
                         <a href="#her" class="link">
                             <span class="icon">
@@ -34,6 +43,7 @@
                             </span>
                         </a>
                     </li>
+                    <!-- nav button items -->
                     <li class="list">
                         <a href="#itm" class="link">
                             <span class="icon">
@@ -44,26 +54,41 @@
                             </span>
                         </a>
                     </li>
+                    <!-- nav indicator -->
                     <div class="indicator"></div>
                 </ul>
             </div>
         </div>
 
-        <div class="main__screen">
-            <div class="screen activeOps" id="hom">
 
+        <!-- screen space -->
+        <div class="main__screen">
+            <!-- screen space home -->
+            <div class="screen activeOps" id="hom">
+                <!-- bg img by css -->
                 <div class="screen__bacground"></div>
-                
+                <!-- centering block -->
                 <div class="screen__center">
+                    <!-- header area page -->
                     <div class="screen__header">
+                        <!-- upper part header -->
                         <div class="screen__up activeTitle">
                             <p class="screen__up-title">Добро пожаловать! Это сайт, про героев из доты.
                             А так же предметы.
                             </p>
-                            <p class="screen__up-subtitle">
+                            <p class="screen__up-subtitle fontem5">
                                 Надеюсь вам понравится интерфейс сайта и то, как он сделан.
                             </p> 
+                            <div class="screen__button">
+                                <a href="#" class="screen__link">
+                                    <span class="screen__text fontem5">К героям <span class="text-low">-></span></span>
+                                </a>
+                                <a href="#" class="screen__link">
+                                    <span class="screen__text fontem5">К предметам <span class="text-low">-></span></span>
+                                </a>
+                            </div>
                         </div> 
+                        <!-- lower part header -->
                         <div class="screen__down">
                             <p class="screen__down-title">
                                 По советам, ошибкам и еще чему-либо обращайтесь сюда TG <br> @Fatekun
@@ -71,9 +96,8 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
-
+            <!-- screen space hero -->
             <div class="screen" id="her">
 
                 <div class="screen__center">
@@ -81,7 +105,7 @@
                 </div>
 
             </div>
-            
+            <!-- screen space items -->
             <div class="screen" id="itm">
                 
                 <div class="screen__center">
@@ -98,9 +122,11 @@
 
 
 
-
+        <!-- script -->
         <script src="script/menuActive.js"></script>
         <script src="script/screenAnchore.js"></script>
+        <script src="script/menuButton.js"></script>
+        <!-- icons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>

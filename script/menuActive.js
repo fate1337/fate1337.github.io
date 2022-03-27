@@ -1,6 +1,6 @@
 const list = document.querySelectorAll('.list');
 const scr = document.querySelectorAll('.screen');
-const textUp = document.querySelector('.screen__up')
+const textUp = document.querySelector('.screen__up');
 let link = 0;
 function activeLink(){
     list.forEach((item) =>
@@ -27,9 +27,6 @@ for(let i = 0; i < list.length; i ++){
     });
     list[i].addEventListener('click', activeLink); 
 }
-
-
-
 
 
 
