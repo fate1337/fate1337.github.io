@@ -18,53 +18,55 @@
     <body>
 
         <!-- navigation bar -->
-        <div class="nav">
-            <div class="navigation">
-                <ul>
+        <div class="navigation">
+            <div class="navigation__body">
+                <ul class="navigation__list">
                     <!-- nav button home -->
-                    <li class="list active">
-                        <a href="#hom" class="link">
-                            <span class="icon">
+                    <li class="navigation__point navigation__point_active">
+                        <a class="navigation__link">
+                            <span class="item-navigation__icon">
                                 <ion-icon name="home-outline"></ion-icon>
                             </span>
-                            <span class="text">
+                            <span class="item-navigation__text">
                                 <p>Home</p>
                             </span>
                         </a>
                     </li>
                     <!-- nav button hero -->
-                    <li class="list">
-                        <a href="#her" class="link">
-                            <span class="icon">
+                    <li class="navigation__point">
+                        <a class="navigation__link">
+                            <span class="item-navigation__icon">
                                 <ion-icon name="accessibility-outline"></ion-icon>
                             </span>
-                            <span class="text">
+                            <span class="item-navigation__text">
                                 <p>Hero</p>
                             </span>
                         </a>
                     </li>
                     <!-- nav button items -->
-                    <li class="list">
-                        <a href="#itm" class="link">
-                            <span class="icon">
+                    <li class="navigation__point">
+                        <a class="navigation__link">
+                            <span class="item-navigation__icon">
                                 <ion-icon name="hammer-outline"></ion-icon>
                             </span>
-                            <span class="text">
+                            <span class="item-navigation__text">
                                 <p>Items</p>
                             </span>
                         </a>
                     </li>
                     <!-- nav indicator -->
-                    <div class="indicator"></div>
+                    <div class="item-navigation__indicator"></div>
                 </ul>
             </div>
         </div>
 
 
         <!-- screen space -->
-        <div class="main__screen">
+        <div class="screen">
+
+
             <!-- screen space home -->
-            <div class="screen activeOps" id="hom">
+            <div class="screen__body screen__body_active" id="hom">
                 <!-- bg img by css -->
                 <div class="screen__bacground"></div>
                 <!-- centering block -->
@@ -72,19 +74,19 @@
                     <!-- header area page -->
                     <div class="screen__header">
                         <!-- upper part header -->
-                        <div class="screen__up activeTitle">
+                        <div class="screen__up screen__up_active">
                             <p class="screen__up-title">Добро пожаловать! Это сайт, про героев из доты.
                             А так же предметы.
                             </p>
-                            <p class="screen__up-subtitle fontem5">
+                            <p class="screen__up-subtitle screen__up_em5">
                                 Надеюсь вам понравится интерфейс сайта и то, как он сделан.
                             </p> 
                             <div class="screen__button">
                                 <a href="#" class="screen__link">
-                                    <span class="screen__text fontem5">К героям <span class="text-low">-></span></span>
+                                    <span class="screen__link-text screen__up_em5">К героям <span class="screen__link-arrow">-></span></span>
                                 </a>
                                 <a href="#" class="screen__link">
-                                    <span class="screen__text fontem5">К предметам <span class="text-low">-></span></span>
+                                    <span class="screen__link-text screen__up_em5">К предметам <span class="screen__link-arrow">-></span></span>
                                 </a>
                             </div>
                         </div> 
@@ -97,16 +99,22 @@
                     </div>
                 </div>
             </div>
+
+
+
             <!-- screen space hero -->
-            <div class="screen" id="her">
+            <div class="screen__body" id="her">
 
                 <div class="screen__center">
                     
                 </div>
 
             </div>
+
+
+
             <!-- screen space items -->
-            <div class="screen" id="itm">
+            <div class="screen__body" id="itm">
                 
                 <div class="screen__center">
                     

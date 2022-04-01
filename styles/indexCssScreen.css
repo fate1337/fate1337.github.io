@@ -2,7 +2,7 @@
 
 
 
-.main__screen
+.screen
 {
     display: flex;
     width: 100vw;
@@ -10,22 +10,20 @@
     justify-content: center;
 }
 
-.screen
+.screen__body
 {
     position: absolute;
     color: white;
-    max-width: 100%;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
     opacity: 0;
     transition: opacity .5s;
 }
 
-.activeOps
+.screen__body_active
 {
     opacity: 1;
     z-index: 1; 
@@ -34,19 +32,17 @@
 .screen__bacground
 {
     position: absolute;
-    z-index: -1;
     display: flex;
     justify-content: center;
     align-self: flex-start;
     height: 80%;
     width: 100%;
-    border: red solid 0px;
     background: linear-gradient(rgba(255, 255, 255, 0), #222327), url(../image/home/bg.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.fontem5
+.screen__up_em5
 {
     font-size: 1.5em;
 }
@@ -76,9 +72,18 @@
     flex-direction: column;
     left: -300px;
     opacity: 0;
-    transition: left 1.5s, opacity 3s;
+    transition: left 2s, opacity 2s;
     font-weight: 700;
-    margin-top: 10vh;
+    margin-top: 10vh
+}
+.screen__up.screen__up_active
+{
+    opacity: 1;
+    left: 0;
+}
+.screen__up-title
+{
+    font-size: 3em;
 }
 
 .screen__down
@@ -86,24 +91,15 @@
     position: relative;
     align-self: flex-end;
 }
-.screen__up.activeTitle
-{
-    opacity: 1;
-    left: 0;
-}
-
-
-
-.screen__up-title
-{
-    font-size: 3em;
-}
-
-
 .screen__down-title
 {
     font-size: 0.8em;
 }
+
+
+
+
+
 
 .screen__button
 {
@@ -133,7 +129,7 @@
     
 }
 
-span .text-low
+span .screen__link-arrow
 {
     position: relative;
     font-weight: 500;
@@ -141,7 +137,7 @@ span .text-low
     transition: left 0.2s;    
 }
 
-.screen__link:hover span .text-low
+.screen__link:hover span .screen__link-arrow
 {
     left: 8px;
 }
