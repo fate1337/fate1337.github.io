@@ -4,11 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 :root
 {
     --clr: #222327;
+    --clrG: #22232700;
     --clrs: rgb(196, 131, 196);
 }
 
@@ -21,6 +23,7 @@ body
     font-family: 'Fredoka', 'Montserrat Alternates', sans-serif;
     font-weight: 300;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 .navigation

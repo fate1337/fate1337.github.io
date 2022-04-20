@@ -1,0 +1,29 @@
+{ 
+    "abaddon" : { 
+        "specifications": "strength", 
+        "strength": 22, 
+        "agility": 23, 
+        "intelligence": 18, 
+        "movespeed": 325, 
+        "health": 640, 
+        "mana": 291 
+    }, 
+    "alchemist": { 
+        "specifications": "strength", 
+        "strength": 25, 
+        "agility": 22, 
+        "intelligence": 25, 
+        "movespeed": 305, 
+        "health": 700, 
+        "mana": 375 
+    }, 
+    "ancient_apparition": { 
+         "specifications": "intelligence", 
+         "strength": 20, 
+         "agility": 20, 
+         "intelligence": 23, 
+         "movespeed": 285, 
+         "health": 600, 
+         "mana": 351 
+     } 
+}

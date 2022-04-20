@@ -5,7 +5,8 @@
 
     <!-- style -->
     <link rel="stylesheet" href="styles/index/navigation/indexNavigation.css">
-    <link rel="stylesheet" href="styles/index/indexCssScreen.css">
+    <link rel="stylesheet" href="styles/index/indexHome.css">
+    <link rel="stylesheet" href="styles/index/indexHero.css">
 
     <!-- media -->
     <link rel="stylesheet" href="styles/index/mediaStyle/home/mediaHome405.css">
@@ -23,7 +24,7 @@
                 <ul class="navigation__list">
                     <!-- nav button home -->
                     <li class="navigation__point navigation__point_active">
-                        <a class="navigation__link">
+                        <a href="#hom" class="navigation__link">
                             <span class="item-navigation__icon">
                                 <ion-icon name="home-outline"></ion-icon>
                             </span>
@@ -34,7 +35,7 @@
                     </li>
                     <!-- nav button hero -->
                     <li class="navigation__point">
-                        <a class="navigation__link">
+                        <a href="#her" class="navigation__link">
                             <span class="item-navigation__icon">
                                 <ion-icon name="accessibility-outline"></ion-icon>
                             </span>
@@ -45,7 +46,7 @@
                     </li>
                     <!-- nav button items -->
                     <li class="navigation__point">
-                        <a class="navigation__link">
+                        <a href="#itm" class="navigation__link">
                             <span class="item-navigation__icon">
                                 <ion-icon name="hammer-outline"></ion-icon>
                             </span>
@@ -66,7 +67,7 @@
 
 
             <!-- screen space home -->
-            <div class="screen__body screen__body_active" id="hom">
+            <div class="screen__body screen__body_active screen__body-home" id="hom">
                 <!-- bg img by css -->
                 <div class="screen__bacground"></div>
                 <!-- centering block -->
@@ -82,10 +83,10 @@
                                 Надеюсь вам понравится интерфейс сайта и то, как он сделан.
                             </p> 
                             <div class="screen__button">
-                                <a href="#" class="screen__link">
+                                <a href="#her" class="screen__link">
                                     <span class="screen__link-text screen__up_em5">К героям <span class="screen__link-arrow">-></span></span>
                                 </a>
-                                <a href="#" class="screen__link">
+                                <a href="#itm" class="screen__link">
                                     <span class="screen__link-text screen__up_em5">К предметам <span class="screen__link-arrow">-></span></span>
                                 </a>
                             </div>
@@ -103,10 +104,37 @@
 
 
             <!-- screen space hero -->
-            <div class="screen__body" id="her">
+            <div class="screen__body screen__body-hero" id="her">
 
                 <div class="screen__center">
-                    
+                    <div class="screen__grid">
+                        
+                        <!-- <a href="" class="screen__card">
+                            <div class="screen__card-image" style="background-image: url(/image/hero/abaddon.png);"></div>
+                            <span class="screen__card-text">Abaddon</span>
+                        </a>
+                        <a href="" class="screen__card">
+                            <div class="screen__card-image" style="background-image: url(/image/hero/alchemist.png);"></div>
+                            <span class="screen__card-text">Alchemist</span>
+                        </a>
+                        <a href="" class="screen__card">
+                            <div class="screen__card-image" style="background-image: url(/image/hero/ancient_apparition.png);"></div>
+                            <span class="screen__card-text">Ancient Apparition</span>
+                        </a>
+                        <a href="" class="screen__card">
+                            <div class="screen__card-image" style="background-image: url(/image/hero/antimage.png);"></div>
+                            <span class="screen__card-text">Anti-Mage</span>
+                        </a>
+                        <a href="" class="screen__card">
+                            <div class="screen__card-image" style="background-image: url(/image/hero/arc_warden.png);"></div>
+                            <span class="screen__card-text">Arc Warden</span>
+                        </a>
+                        <a href="" class="screen__card">
+                            <div class="screen__card-image" style="background-image: url(/image/hero/axe.png);"></div>
+                            <span class="screen__card-text">Axe</span>
+                        </a> -->
+
+                    </div>
                 </div>
 
             </div>
@@ -114,10 +142,10 @@
 
 
             <!-- screen space items -->
-            <div class="screen__body" id="itm">
+            <div class="screen__body screen__body-items" id="itm">
                 
                 <div class="screen__center">
-                    
+                    321
                 </div>
 
             </div>
@@ -134,6 +162,7 @@
         <script src="script/indexScript/menuActive.js"></script>
         <script src="script/indexScript/menuButton.js"></script>
         <script src="script/screenAnchore.js"></script>
+        <script src="script/jsonjs/heroCreateCard.js"></script>
         <!-- icons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
