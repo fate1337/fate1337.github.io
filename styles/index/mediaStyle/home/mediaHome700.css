@@ -1,5 +1,10 @@
 @media (max-width: 700px) {
    
+
+    .screen
+    {
+        left: 0;
+    }
     .screen__center
     {
         width: 100vw;

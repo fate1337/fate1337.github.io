@@ -13,16 +13,16 @@ function activeLink(){
     item.classList.remove('navigation__point_active'));
     this.classList.add('navigation__point_active');
 // Удаление активного класса у блока screen__body и добовление, для плавности и opacity 
-    // scr.forEach((item) =>
-    // item.classList.remove('screen__body_active'));
+    scr.forEach((item) =>
+    item.classList.remove('screen__body_active'));
     if (link == 0){
-        // scr[0].classList.add('screen__body_active');
+        scr[0].classList.add('screen__body_active');
         textUp.classList.add('screen__up_active');
     }else if (link == 1){
-        // scr[1].classList.add('screen__body_active');
+        scr[1].classList.add('screen__body_active');
         textUp.classList.remove('screen__up_active');
     }else if (link == 2){
-        // scr[2].classList.add('screen__body_active');
+        scr[2].classList.add('screen__body_active');
         textUp.classList.remove('screen__up_active');
     }
 }
