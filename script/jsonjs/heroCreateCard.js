@@ -281,6 +281,7 @@ const grid = document.querySelector('.screen__grid-hero');
 for (const key in hero) {
     let a = document.createElement('a');
     a.className = "screen__card";
+    a.setAttribute('href', "/Hero.html")
 
     let divInA = document.createElement('div');
     divInA.className = "screen__card-image";
