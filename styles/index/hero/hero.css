@@ -1,0 +1,69 @@
+.space {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+.space__hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: max-content;
+}
+.space__hero-img{
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    max-height: 70vh;
+    transform: scale(1.001);
+}
+.space__param {
+    padding: .7em;
+    padding-right: 2em;
+    background-color: rgba(0, 0, 0, 0.719);
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    display: flex;
+    gap: 2em;
+}
+.space__param-hero {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.space__hero-text {
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+/* .space__hero-name {
+}
+.space__hero-health {
+}
+.space__hero-mana {
+} */
+.space__hero-argument {
+    position: relative;
+    min-height: 30vh;
+}
+.space__param-argument {
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-items: center;
+}
+/* .space__specifications {
+}
+.space__attribute {
+}
+.space__attribute-strength {
+}
+.space__attribute-agility {
+}
+.space__attribute-intelligence {
+}
+.space__other {
+}
+.space__other-movespeed {
+} */

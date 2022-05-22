@@ -29,8 +29,11 @@
     text-decoration: none;
     align-items: flex-end;
     justify-content: center;
+    transition: .3s;
 }
-
+.screen__card:hover{
+    transform: scale(1.35);
+}
 .screen__card-itm
 {
     width: 139px;

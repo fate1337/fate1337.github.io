@@ -277,20 +277,56 @@ const hero = {
 
 }
 
-const grid = document.querySelector('.screen__grid-hero');
-for (const key in hero) {
-    let a = document.createElement('a');
-    a.className = "screen__card";
-    a.setAttribute('href', "/Hero.html")
 
-    let divInA = document.createElement('div');
-    divInA.className = "screen__card-image";
-    divInA.style.backgroundImage = `url(${hero[key].path})`
-    let spanInA = document.createElement('span');
-    spanInA.className = "screen__card-text";
-    spanInA.innerHTML = hero[key].name
+const heroInClass = '123';
+let page = window.location.pathname;
+console.log(page);
+if (page == "/index.html") {
+    localStorage.clear();
+    const grid = document.querySelector('.screen__grid-hero');
+    for (const key in hero) {
+        let a = document.createElement('a');
+        a.className = `screen__card ${key}`;
+        a.setAttribute('href', `/Hero.html`);
+        // console.log(`/?name=${hero[key].name}`);
 
-    grid.append(a)
-    a.append(divInA)
-    a.append(spanInA)
+        let divInA = document.createElement('div');
+        divInA.className = "screen__card-image";
+        divInA.style.backgroundImage = `url(${hero[key].path})`
+        let spanInA = document.createElement('span');
+        spanInA.className = "screen__card-text";
+        spanInA.innerHTML = hero[key].name;
+        
+        grid.append(a);
+        a.append(divInA);
+        a.append(spanInA);
+    }
+}
+
+
+const linkInHero = document.querySelectorAll('.screen__card');
+
+function localHero(item) {
+    b = this.className.split(" ", 2)[1];
+    localStorage.setItem("name", b);
+    console.log(localStorage.getItem("name"));
+}
+
+linkInHero.forEach((item) => item.addEventListener('click', localHero));
+
+if (page == "/Hero.html") {
+    let keyInHero = localStorage.getItem("name");
+    document.getElementById('nameHero').innerHTML = hero[keyInHero].name;
+    document.getElementById('HPHero').innerHTML = hero[keyInHero].health;
+    document.getElementById('ManaHero').innerHTML = hero[keyInHero].mana;
+
+    document.getElementById('specificationsHero').innerHTML = hero[keyInHero].specifications;
+    document.getElementById('strengthHero').innerHTML = hero[keyInHero].strength;
+    document.getElementById('agilityHero').innerHTML = hero[keyInHero].agility;
+    document.getElementById('intelligenceHero').innerHTML = hero[keyInHero].intelligence;
+    document.getElementById('movespeedHero').innerHTML = hero[keyInHero].movespeed;
+    var pat = hero[keyInHero].path.replace("\'", '').replace("\'", '');
+    console.log(pat.replace("\'", ''));
+    let image = document.getElementById('imgHero');
+    image.setAttribute('src', pat);
 }
