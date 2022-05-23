@@ -1,0 +1,10 @@
+@media (max-width: 405px) {
+   
+    .navigation
+    {
+        width: 100vw;
+        height: 40%;
+        border-radius: 0px;
+    }
+
+}

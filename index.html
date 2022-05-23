@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- style -->
+    <link rel="stylesheet" href="styles/index/navigation/indexNavigation.css">
+    <link rel="stylesheet" href="styles/index/indexHome.css">
+    <link rel="stylesheet" href="styles/index/indexHero.css">
+
+    <!-- media -->
+    <link rel="stylesheet" href="styles/index/mediaStyle/home/mediaHome405.css">
+    <link rel="stylesheet" href="styles/index/mediaStyle/home/mediaHome700.css">
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2</title>
+</head>
+    <body>
+
+        <!-- navigation bar -->
+        <div class="navigation">
+            <div class="navigation__body">
+                <ul class="navigation__list">
+                    <!-- nav button home -->
+                    <li class="navigation__point navigation__point_active">
+                        <a href="#hom" class="navigation__link">
+                            <span class="item-navigation__icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="item-navigation__text">
+                                <p>Home</p>
+                            </span>
+                        </a>
+                    </li>
+                    <!-- nav button hero -->
+                    <li class="navigation__point">
+                        <a href="#her" class="navigation__link">
+                            <span class="item-navigation__icon">
+                                <ion-icon name="accessibility-outline"></ion-icon>
+                            </span>
+                            <span class="item-navigation__text">
+                                <p>Hero</p>
+                            </span>
+                        </a>
+                    </li>
+                    <!-- nav button items -->
+                    <li class="navigation__point">
+                        <a href="#itm" class="navigation__link">
+                            <span class="item-navigation__icon">
+                                <ion-icon name="hammer-outline"></ion-icon>
+                            </span>
+                            <span class="item-navigation__text">
+                                <p>Items</p>
+                            </span>
+                        </a>
+                    </li>
+                    <!-- nav indicator -->
+                    <div class="item-navigation__indicator"></div>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- screen space -->
+        <div class="screen">
+
+
+            <!-- screen space home -->
+            <div class="screen__body screen__body_active screen__body-home" id="hom">
+                <!-- bg img by css -->
+                <div class="screen__bacground"></div>
+                <!-- centering block -->
+                <div class="screen__center">
+                    <!-- header area page -->
+                    <div class="screen__header">
+                        <!-- upper part header -->
+                        <div class="screen__up screen__up_active">
+                            <p class="screen__up-title">Добро пожаловать! Это сайт, про героев из доты.
+                            А так же предметы.
+                            </p>
+                            <p class="screen__up-subtitle screen__up_em5">
+                                Надеюсь вам понравится интерфейс сайта и то, как он сделан.
+                            </p> 
+                            <div class="screen__button">
+                                <a href="#her" class="screen__link">
+                                    <span class="screen__link-text screen__up_em5">К героям <span class="screen__link-arrow">-></span></span>
+                                </a>
+                                <a href="#itm" class="screen__link">
+                                    <span class="screen__link-text screen__up_em5">К предметам <span class="screen__link-arrow">-></span></span>
+                                </a>
+                            </div>
+                        </div> 
+                        <!-- lower part header -->
+                        <div class="screen__down">
+                            <p class="screen__down-title">
+                                По советам, ошибкам и еще чему-либо обращайтесь сюда TG <br> @Fatekun
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- screen space hero -->
+            <div class="screen__body screen__body-hero" id="her">
+
+                <div class="screen__center">
+                    <div class="screen__grid screen__grid-hero">
+                        
+                        <!-- <a href="" class="screen__card">
+                            <div class="screen__card-image" style="background-image: url(/image/hero/abaddon.png);"></div>
+                            <span class="screen__card-text">Abaddon</span>
+                        </a> -->
+                        
+                        
+                    </div>
+                    <div class="screen__footer">
+                        <p class="screen__footer-text">THX</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- screen space items -->
+            <div class="screen__body screen__body-items" id="itm">
+                
+                <div class="screen__center">
+                    <div class="screen__grid screen__grid-items">
+                        
+
+                    </div>
+                    <div class="screen__footer">
+                        <p class="screen__footer-text">THX</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- script -->
+        <script src="script/indexScript/menuActive.js"></script>
+        <script src="script/indexScript/menuButton.js"></script>
+        <script src="script/screenAnchore.js"></script>
+        <script src="script/jsonjs/heroCreateCard.js"></script>
+        
+        <script src="script/jsonjs/itemsCreateCard.js"></script>
+        <!-- icons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
